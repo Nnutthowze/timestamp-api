@@ -1,0 +1,15 @@
+include includes/header.pug
+h3 User stories:
+ul
+  each story in stories
+    li= story
+
+h3 Example usage:
+code https://timestamp-ms.herokuapp.com/December%2015,%202015
+br
+code https://timestamp-ms.herokuapp.com/1450137600
+
+h3 Example output:
+code { "unix": 1450137600, "natural": "December 15, 2015" }
+
+include includes/footer.pug
